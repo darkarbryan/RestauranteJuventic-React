@@ -31,10 +31,10 @@ class App extends React.Component {
                         }
                         <Router history={history}>
                             <Switch>
-                                <PrivateRoute exact path="/" component={adminPage} />
+                                <PrivateRoute exact path="/admin" component={adminPage} />
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
-                                <Route path="/home" component={HomePage} />
+                                <Route path="/" component={HomePage} />
                                  
                                 <Redirect from="*" to="/" />
                             </Switch>
