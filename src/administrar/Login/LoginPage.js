@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
 
+
 class LoginPage extends React.Component {
     constructor(props) {
         super(props);
@@ -42,6 +43,7 @@ class LoginPage extends React.Component {
         return (
             <div className="col-md-6 col-md-offset-3">
             <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br />
+           
                 <h2>Login</h2>
                  
                 <form name="form" onSubmit={this.handleSubmit}>

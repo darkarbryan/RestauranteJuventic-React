@@ -22,8 +22,8 @@ import { Info } from '../../components/Servicios/Info-servicios.js';
 import { Sedes } from '../../components/Sedes/Sedes';
 import { Email } from '../../components/Contactar/Email.js';
 import { Servicios } from '../../components/Servicios/Servicios.js';
+ import { Panel } from './panel.js';
  
-
 class adminPage extends React.Component { 
  componentDidMount() {
         this.props.getUsers();
@@ -38,32 +38,11 @@ class adminPage extends React.Component {
      const { user, users } = this.props;
         
         return (
-         <div >
-         
-          <CarouselSlide/>
-                <h1>Hi {user.firstName}!</h1>
-                <p>You're logged in with React!!</p>
-                <h3>All registered users:</h3>
-                {users.loading && <em>Loading users...</em>}
-                {users.error && <span className="text-danger">ERROR: {users.error}</span>}
-                {users.items &&
-                    <ul>
-                        {users.items.map((user, index) =>
-                            <li key={user.id}>
-                                {user.firstName + ' ' + user.lastName}
-                                {
-                                    user.deleting ? <em> - Deleting...</em>
-                                    : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                    : <span> - <a onClick={this.handleDeleteUser(user.id)}>Delete</a></span>
-                                }
-                            </li>
-                        )}
-                    </ul>
-                }
-                <p>
-                    <Link to="/login">Logout</Link>
-                </p>
-            </div>
+       <>
+         <Panel/>
+
+                 
+          </>
         );
     }
     
