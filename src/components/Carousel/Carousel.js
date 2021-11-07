@@ -33,7 +33,8 @@ export const CarouselSlide = () => {
 VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
            
             <div>
-            <Link to="/contacto" class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVATE AQUI</Link>
+                        <Link to="/platos" class="btn btn-outline-warning bi-telephone-plus" > Contactenos</Link>
+
                 </div>
                 </div>     </div></div></div>
         
@@ -62,7 +63,7 @@ VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
 CONOCELOS Y HAZ TU PEDIDO</p>
            
             <div>
-            <Link to="/platos"   class="btn-sm btn-outline-warning">ESPECIALIDADES</Link>
+            <Link to="/platos" class="btn btn-outline-warning bi bi-card-list" > Mira nuestros platos</Link>
                 </div>
                 </div>     </div></div></div>
         
@@ -93,7 +94,8 @@ TE BRINDAMOS LA MEJOR ATENCION Y UNA DIGUSTACION IRREPETIBLE
   </p>
            
             <div>
-            <Link to="/contacto"  class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVACION DE EVENTOS</Link>
+                        <Link to="/platos" class="btn btn-outline-warning bi-telephone-plus" > Contactenos</Link>
+
                 </div>
                 </div>     </div></div></div>
     </Carousel.Item>
