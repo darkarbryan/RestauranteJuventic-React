@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
-
+ 
+import { NavBar } from "../../components/NavBar/Navbar.js";
 
 class LoginPage extends React.Component {
     constructor(props) {
@@ -41,26 +42,27 @@ class LoginPage extends React.Component {
         const { loggingIn } = this.props;
         const { username, password, submitted } = this.state;
         return (
-            <div className="col-md-6 col-md-offset-3">
-            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br />
+            <div className=" ">
+                <NavBar />
+               <br /><br /> <br />
            
                 <h2>Login</h2>
                  
                 <form name="form" onSubmit={this.handleSubmit}>
                     <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
-                        <label htmlFor="username">Username</label>
+                        <label htmlFor="username">Usuario</label>
                         <input type="text" className="form-control" name="username" value={username} onChange={this.handleChange} />
                         {submitted && !username &&
-                            <div className="help-block">Username is required</div>
+                            <div className="help-block">Usuario requerido!</div>
                         }
                     </div>
                     <div className={'form-group' + (submitted && !password ? ' has-error' : '')}>
-                        <label htmlFor="password">Password</label>
+                        <label htmlFor="password">Contraseña</label>
                         <input type="password" className="form-control" name="password" value={password} onChange={this.handleChange} />
                         {submitted && !password &&
-                            <div className="help-block">Password is required</div>
+                            <div className="help-block"> Contraseña requerida!</div>
                         }
-                    </div>
+                    </div>  <br /> 
                     <div className="form-group">
                         <button className="btn btn-primary">Iniciar Sesion</button>
                         {loggingIn &&

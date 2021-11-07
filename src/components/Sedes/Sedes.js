@@ -2,7 +2,8 @@ import React, {useEffect, useState, } from 'react'
 import '../NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+ 
+import { NavBar } from "../NavBar/Navbar.js";
  
 
 export const Sedes = () => {
@@ -257,9 +258,9 @@ export const Sedes = () => {
    
     return (
     
-       
+        
         <div>
-      
+      <NavBar />
     
                 <center> <h1 style={{ color: '#ffc56e' }}>  Organizamos tus eventos </h1> 
                

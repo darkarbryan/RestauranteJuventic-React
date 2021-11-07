@@ -11,7 +11,7 @@ import { RegisterPage } from '../../administrar/RegisterPage';
 
 
 
-export const NavBar2 = () => {
+export const NavBar = () => {
   /**
   * Template Name: Delicious - v4.4.0
   * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -510,10 +510,8 @@ export const NavBar2 = () => {
     })
 
   return (
-
-    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <header id="header" class="  d-flex align-items-center header-black">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
         <img
           src="./images/icon.png"
           width="35"
@@ -529,9 +527,8 @@ export const NavBar2 = () => {
 
 
             <nav id="navbar" class="navbar order-last order-lg-0">
-              <ul>
-              <li><Link to="/" className="nav-link bi bi-house">Inicio</Link></li>
-                <li> <Link to="/info" class="nav-link scrollto bi bi-person-circle">¿Quienes somos?</Link></li>
+              <ul><li><Link to="/" className="nav-link bi bi-house">Inicio</Link></li>
+                <li> <Link to="/admin" class="nav-link scrollto bi bi-person-circle">¿Quienes somos?</Link></li>
                 <li><Link to="/platos" class="nav-link scrollto bi bi-receipt-cutoff" >Platos</Link></li>
                 <li><Link to="/servicios" class="nav-link scrollto  bi bi-ui-checks-grid" >Servicios</Link></li>
                 <li><Link to="/contacto" class="nav-link scrolltobi bi-telephone-plus" >Contactenos</Link></li>

@@ -2,7 +2,8 @@ import React, {useEffect, useState, } from 'react'
 import '../NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+ 
+import { NavBar } from "../NavBar/Navbar.js";
  
 
 export const Servicios = () => {
@@ -257,7 +258,7 @@ export const Servicios = () => {
    
     return (
       <>
-          
+          <NavBar />
     <section id="specials" class="specials">
     <div class=" ">
 

@@ -3,7 +3,9 @@ import '../../components/NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import emailjs from 'emailjs-com'
- 
+
+  
+import { NavBar } from "../NavBar/Navbar.js";
 
 export const Email = () => {
 
@@ -312,6 +314,7 @@ export const Email = () => {
      
     
         <div>
+          <NavBar />
          <div class="col-lg-3">
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">

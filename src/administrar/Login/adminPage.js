@@ -13,11 +13,11 @@ import { LoginPage } from './LoginPage';
 import { RegisterPage } from '../RegisterPage';
  import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.scss'
-import { NavBar } from "../../components/NavBar/Navbar2";
+ 
 import { CarouselSlide } from "../../components/Carousel/Carousel"
 import { main } from "../../components/Carousel/main.js"
   
-
+import { NavBar } from "../../components/NavBar/Navbar.js";
 import { Info } from '../../components/Servicios/Info-servicios.js';
 import { Sedes } from '../../components/Sedes/Sedes';
 import { Email } from '../../components/Contactar/Email.js';
@@ -39,6 +39,7 @@ class adminPage extends React.Component {
         
         return (
        <>
+       <NavBar/>
          <Panel/>
 
                  
