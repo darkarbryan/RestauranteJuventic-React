@@ -9,7 +9,10 @@ import { HomePage } from '../HomePage';
 import { adminPage } from '../administrar/Login/adminPage.js';
 import { LoginPage } from '../administrar/Login/LoginPage';
 import { RegisterPage } from '../administrar/RegisterPage';
- 
+import { Sedes } from '../components/Sedes/Sedes';
+import { Email } from '../components/Contactar/Email.js';
+import { Servicios } from '../components/Servicios/Servicios.js';
+ import { Panel } from '../administrar/Login/panel.js';
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -35,10 +38,13 @@ class App extends React.Component {
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
                                 <Route path="/" component={HomePage} />
+                                <Route path="/Contacto" component={Email} />
+                                <Route path="/Servicios" component={Servicios} />
+                                <Route path="/Platos" component={Sedes} />
                                  
                                 <Redirect from="*" to="/" />
                             </Switch>
-                        </Router>
+                        </Router> 
                     </div>
                 </div>
             </div>

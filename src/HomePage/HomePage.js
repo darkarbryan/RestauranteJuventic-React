@@ -33,7 +33,7 @@ class HomePage extends React.Component {
                 <div className=" ">
              <main/>
  
-      <CarouselSlide/>
+             <CarouselSlide/>
        <Email/>
       <Info/>
        <br/>
