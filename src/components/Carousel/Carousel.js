@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-
+import { Link } from 'react-router-dom';
 
 
 export const CarouselSlide = () => {
@@ -33,7 +33,7 @@ export const CarouselSlide = () => {
 VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
            
             <div>
-                  <a href="menu.html"  class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVATE AQUI</a>
+            <Link to="/contacto" class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVATE AQUI</Link>
                 </div>
                 </div>     </div></div></div>
         
@@ -62,7 +62,7 @@ VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
 CONOCELOS Y HAZ TU PEDIDO</p>
            
             <div>
-                  <a href="menu.html"  class="btn-sm btn-outline-warning">ESPECIALIDADES</a>
+            <Link to="/platos"   class="btn-sm btn-outline-warning">ESPECIALIDADES</Link>
                 </div>
                 </div>     </div></div></div>
         
@@ -93,7 +93,7 @@ TE BRINDAMOS LA MEJOR ATENCION Y UNA DIGUSTACION IRREPETIBLE
   </p>
            
             <div>
-                 <a href="menu.html" class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVACION DE EVENTOS</a>
+            <Link to="/contacto"  class="btn-sm btn-outline-warning"><i class="bi bi-calendar2-check"></i>RESERVACION DE EVENTOS</Link>
                 </div>
                 </div>     </div></div></div>
     </Carousel.Item>
