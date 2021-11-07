@@ -32,15 +32,15 @@ class HomePage extends React.Component {
           <div className="jumbotron">
                 <div className=" ">
              <main/>
- 
+ <NavBar2 />
              <CarouselSlide/>
-       <Email/>
+   
       <Info/>
        <br/>
          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <Sedes/>
+    
     <br/><br/><br/>
-        <Servicios/>
+         
    
       <br/>
       <hr/>
