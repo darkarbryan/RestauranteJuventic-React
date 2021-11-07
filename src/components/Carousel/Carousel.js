@@ -33,7 +33,7 @@ export const CarouselSlide = () => {
 VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
            
             <div>
-                        <Link to="/platos" class="btn btn-outline-warning bi-telephone-plus" > Contactenos</Link>
+                        <Link to="/contacto" class="btn btn-outline-warning bi-telephone-plus" > Reservate aqui</Link>
 
                 </div>
                 </div>     </div></div></div>
@@ -94,7 +94,7 @@ TE BRINDAMOS LA MEJOR ATENCION Y UNA DIGUSTACION IRREPETIBLE
   </p>
            
             <div>
-                        <Link to="/platos" class="btn btn-outline-warning bi-telephone-plus" > Contactenos</Link>
+                        <Link to="/contacto" class="btn btn-outline-warning bi-telephone-plus" > Contactenos</Link>
 
                 </div>
                 </div>     </div></div></div>

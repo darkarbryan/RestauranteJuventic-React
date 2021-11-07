@@ -2,7 +2,9 @@ import React, {useEffect, useState,useRef } from 'react'
 import '../../components/NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
+import { Router, Route, Switch, Redirect, Link } from 'react-router-dom';
+
 
   
 import { NavBar } from "../NavBar/Navbar.js";
@@ -313,40 +315,47 @@ export const Email = () => {
     
      
     
-        <div>
+       <>
           <NavBar />
-         <div class="col-lg-3">
-          <ul class="nav nav-tabs flex-column">
-            <li class="nav-item">
-              <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"> Envio de email</a>
-            </li>
-        
-        
-          </ul>
-        </div>
-         <div class="col-lg-9 mt-4 mt-lg-0">
-          <div class="tab-content">
-            <div class="tab-pane active show" id="tab-1">
-              <div class="row">
-                <div class="col-lg-8 details order-2 order-lg-1">
-                  <h3>Contactenos</h3>
+      <section id="specials" class="specials">
+        <div class=" ">
+
+          <div class="section-title">
+         <h3>Contactenos</h3>
                   
                            
-                     Cuentanos tus dudas, preguntas, solicitudes o peticiones<br /> <b> te responderemos en el mejor tiempo posible</b><br /><br />
-       
+                   <p>  Cuentanos tus dudas, preguntas, solicitudes o peticiones<br /> <b> te responderemos en el mejor tiempo posible</b><br /><br />
+       <i class="bi bi-heart-fill"></i></p>  <br /> <br />
+
+            <div class="row">
+              <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/img/logo_correo.png" width="70" height="40" /> EMAIL</a>
+                  </li>
+                 
+                </ul>
+              </div>
+
+              <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="tab-content">
+                  <div class="tab-pane active show" id="tab-1">
+                    <div class="row">
+                      <div class="col-lg-8">
+                      
        
         
                <form 
                 ref={form} 
-                className ="col card text-dark bg-transparent mb-5 pt-5 pb-2"
+                className ="col-lg-12"
                 onSubmit={SubmitForm}
               >
                     
                
                        <div className="so row">
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                                <div className="form-group">
-                                   <label className="m-4">Nombre</label>
+                                   <label className="m-1">Nombre</label>
                                    <input 
                                    type="text"
                                    className="form-control"
@@ -357,9 +366,9 @@ export const Email = () => {
                                    />
                                </div>
                            </div>
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                            <div className="form-group">
-                                   <label className="m-4">Telefono</label>
+                                   <label className="m-1">Telefono</label>
                                    <input 
                                    type="number"
                                    className="form-control"
@@ -370,9 +379,9 @@ export const Email = () => {
                                    />
                                </div>
                            </div>
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                            <div className="form-group">
-                                   <label htmlFor="email" className="m-4">Email</label>
+                                   <label htmlFor="email" className="m-1">Email</label>
                                    <input 
                                    type="email"
                                    className="form-control"
@@ -383,9 +392,9 @@ export const Email = () => {
                                    />
                                </div>
                            </div>
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                            <div className="form-group">
-                                   <label className="m-4" >Numero de personas</label>
+                                   <label className="m-1" >Numero de personas</label>
                                    <input 
                                    type="number"
                                    className="form-control"
@@ -396,16 +405,16 @@ export const Email = () => {
                                    />
                                </div>
                            </div>
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                            <div className="form-group">
-                           <label htmlFor="exampleFormControlSelect1" className="m-4">Seleccione servicio</label>
+                           <label htmlFor="exampleFormControlSelect1" className="m-1">Seleccione servicio</label>
                             <select 
                             className="form-control" 
                             onChange={handleChangeReserva}
                             value={Servicio}
                             name="Servicio"
                             >
-                            <option selected disabled value="">....Selecciona...</option>
+                            <option selected disabled value="">Selecciona tu servicio</option>
                                 <option>Celebracion de cumpleaños</option>
                                 <option>Aniversario</option>
                                 <option>Fiesta infantil</option>
@@ -415,9 +424,9 @@ export const Email = () => {
                             </select>
                                </div>
                            </div>
-                           <div className="col-md-4">
+                           <div className="col-md-12">
                             <div className="form-group">
-                                    <label className="m-4">Fecha</label>
+                                    <label className="m-1">Fecha</label>
                                     <input
                                             onChange={handleChangeReserva}
                                             value={Fecha}
@@ -427,9 +436,9 @@ export const Email = () => {
                                             />
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-md-12">
                             <div className="form-group">
-                                    <label className="m-4">Hora</label>
+                                    <label className="m-1">Hora</label>
                                             <input
                                             onChange={handleChangeReserva}
                                             value={Hora}
@@ -440,9 +449,10 @@ export const Email = () => {
                
                                 </div>
                             </div>
-                            <div className="col-md-8">
+                            
+                            <div className="col-md-12">
                             <div className="form-group">
-                                    <label className="m-4">Indicaciones</label>
+                                    <label className="m-1">Mensaje</label>
                                     <textarea 
                                     onChange={handleChangeReserva}
                                     value={Indicaciones}
@@ -455,15 +465,23 @@ export const Email = () => {
                             </div>
                  </div>
                     
-                        <button type="submit" className=" btn  btn-success m-4" >Reservar</button>
+                        <button type="submit" className=" btn  btn-success m-1" >Reservar</button>
                          
                </form>
-                  </div>   
-                  </div> </div>
-           </div> </div> </div> 
+                      </div>
+                       
+                    </div>
+                  </div>
+                   
+              </div>
+            </div>
+          </div>
+
+        </div>        </div>
+      </section>
+      </>
       
       
- 
     
     
     );  
