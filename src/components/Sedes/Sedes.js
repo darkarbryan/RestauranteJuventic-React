@@ -262,15 +262,6 @@ export const Sedes = () => {
         <div>
       <NavBar />
     
-                <center> <h1 style={{ color: '#ffc56e' }}>  Organizamos tus eventos </h1> 
-               
-                <p>
-                    Tenemos una variedad de servicios contamos con los mejores profesionales en culinario y decoracion. <br />
-                     Elige, nosotros nos encargamos del resto <i class="bi bi-heart-fill"></i>
-                </p>
-
-            </center> 
-            
         <div class="container-fluid">
 
       <div class="section-title">
