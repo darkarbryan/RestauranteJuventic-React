@@ -260,7 +260,7 @@ export const Sedes = () => {
     
         
         <div>
-      <NavBar />
+       
     
         <div class="container-fluid">
 

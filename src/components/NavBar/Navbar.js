@@ -529,7 +529,7 @@ export const NavBar = () => {
             <nav id="navbar" class="navbar order-last order-lg-0">
               <ul><li><Link to="/" className="nav-link bi bi-house">Inicio</Link></li>
                 <li> <Link to="/info" class="nav-link scrollto bi bi-person-circle">¿Quienes somos?</Link></li>
-                <li><Link to="/platos" class="nav-link scrollto bi bi-receipt-cutoff" >Platos</Link></li>
+                <li><Link to="/menu" class="nav-link scrollto bi bi-receipt-cutoff" >Platos</Link></li>
                 <li><Link to="/servicios" class="nav-link scrollto  bi bi-ui-checks-grid" >Servicios</Link></li>
                 <li><Link to="/contacto" class="nav-link scrolltobi bi-telephone-plus" >Contactenos</Link></li>
                 <li><Link to="/login" className="nav-link bi bi-key-fill">Ingresar</Link></li>
