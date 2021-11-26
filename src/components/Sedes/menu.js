@@ -255,13 +255,121 @@ export const menu = () => {
   });
 
 })()
-   
+
+const titulos = ["Costillares silvestres con calabacin asado y guisantes variados", "Bandeja parmessiana con seleccion de verduras", "Corona de ensalada mixta Cesar-Silvestre con buñuelos", "Pulpo encurtido con salsa de mar y dulces aderezos", "Copa de camarones asados encurtidos con salsa agridulce", "Costillares silvestres con calabacin asado y guisantes variados", ];
+const imagenes = ["assets/img/platillos/menu1@2x.png", "assets/img/platillos/menu2@2x.png", "assets/img/platillos/menu3@2x.png", "assets/img/platillos/menu4@2x.png", "assets/img/platillos/menu5@2x.png", "assets/img/platillos/menu1@2x.png"];
+const descripcion = ["Disfruta de nuestra especilidad, costillares ahumados acompañado con calabacin silvestre. Ademas, como acompañamiento guisantes variados con salsa agridulce.", "Para disfrutar en acompañamiento, deleitate con el clasico saber de nuestra lasagna con relleno de pavo acompañado con una cuidadosa seleccion de condimentos y granos como acompañantes.", "Plato recomendado de nuestra casa para aquellos amantes de la ensalada. Saborea lo mejor de la ensalada cesar y silvestre en una sola, acompañado de unos buñuelos con masa 100% artesanal.", "Amante de la comida de mar, este platillo es el idea para ti. Disfruta de nuestro pulpo asado enrollado con salsa de mar. Viene acompañado con dulces aderezos para complementar y brindar un sabor agridulce a tu paladar.", "Amaras estos camarones que tenemos para ti. Asados y bañados en salsa agridulce, este manjar despertara todos tus sentidos.", "Disfruta de nuestra especilidad, costillares ahumados acompañado con calabacin silvestre. Ademas, como acompañamiento guisantes variados con salsa agridulce.", "Disfruta de nuestra especilidad, costillares ahumados acompañado con calabacin silvestre. Ademas, como acompañamiento guisantes variados con salsa agridulce."];
+const precios = [12000.00, 15000.00, 21000.00, 16000.00, 9000.00, 12000.00];
+
+
+function mostrarModal(numeroMenu) {
+
+    var numero = numeroMenu - 1; //las pocisiones de array empiezan desde 0, por ende se resta 1 ya que se empieza a contar desde e 1 de lado del front-end
+
+    Swal.fire({
+        title: titulos[numero],
+        html: "<h5>" + descripcion[numero] + "<br/><br/><b>Precio: $" + precios[numero] + "</b></h5>",
+        imageUrl: imagenes[numero],
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+        
+    })
+
+}
     return (
     
         
         <div>
       <NavBar />
     
+      
+ <nav>
+  <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="assets/img/carrito.png" align="left" class="derecha" height="50px"
+                                    width="50px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table"  height="110px"
+                                    width="190px">
+                                        <thead>
+                                           <a href="#" id="vaciar-carrito" class="btn btn-secondary  "> <b>Vaciar Carrito</b> </a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-success  "><b> Facturar pedido </b></a>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                 
+                                </div>
+                            </li>
+                        </ul>
+ </nav>
+
+
+ <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+          
+        </div>
+   <div class="descargar-menu">
+                <p>
+                  <center> <a href="pdf/Menu.pdf" class="btn-outline-danger" download="Menu.pdf"><i class="bi bi-download"></i>DESCARGAR MENÚ</a>
+                    <br/><br/></center>
+                </p>
+             </div>
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-2 shadow-sm">
+            
+                     
+           <div class="fila">
+            <div class="row">
+
+               <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-8" id="lista-productos">
+                    <div class="card text-center">
+                     <img src="assets/img/platillos/menu1@2x.png" alt="Imagen Menu Plato 1" class="DiagonalRedonda" id="imgCuadro"/>
+                       
+                    </div>
+                    <div class="card-body">
+                      <h4 class="my-0 font-weight-bold">Costillares silvestres con calabacin asado </h4>
+                        <h3 class="card-title pricing-card-title precio">$ <span class="">12000.00</span></h3>
+
+                        <div class="list-unstyled mt-3 mb-4">
+                              <button type="button" class="btn btn-outline-secundary mx-auto d-block mt-5 btn-lg" onclick="mostrarModal(1)"><i class="bi bi-plus-circle-fill"></i></button>
+                              
+         <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <p>   <img src="assets/img/platillos/menu1@2x.png" alt="Imagen Menu Plato 1" class="DiagonalRedonda1"    id="imgCuadro"/>   Disfruta de nuestra especilidad <br/> costillares ahumados acompañado con calabacin silvestre. Ademas, como acompañamiento guisantes variados con salsa agridulce.</p>  
+                    </div>
+                </div>
+                
+                    
+            </div>
+ <script>
+   
+   </script>
+                    <input type="number" class="input" min="1" value="1" placeholder="Cantidad" required/> <br/>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+              </main>
+
         <div class="container-fluid">
 
       <div class="section-title">
