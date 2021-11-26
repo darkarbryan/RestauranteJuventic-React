@@ -5,8 +5,41 @@
 @import url("assets/vendor/boxicons/css/boxicons.min.css");
 @import url("assets/vendor/glightbox/css/glightbox.min.css");
 @import url("assets/vendor/swiper/swiper-bundle.min.css");
-@import url("./bootstrap.min.css");                           
+@import url("./bootstrap.min.css");   
 
+
+
+
+img.DiagonalRedonda {
+  border-top-left-radius: 20%;
+      border-bottom-right-radius: 20%;
+      border:1px black solid;
+  background-color:white;
+      padding:10px;   
+  box-shadow: 0px 0px 50px 0px rgba(250, 164, 032, 0.8);
+  }
+
+div.noticia {
+  width: 100%;
+   
+  background-color: transparent;
+  color:transparent;
+  padding: 5px;
+}
+
+div.noticia img.izquierda {
+  float: left;
+  margin-right: 44px;
+}
+
+div.noticia img.derecha {
+  float: right;
+  margin-left: 51px;
+}
+
+div.reset {
+  clear: both;
+}
  .photo-gallery {
   color:#313437;
   background-color:#fff;
