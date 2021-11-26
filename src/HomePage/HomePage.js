@@ -9,7 +9,8 @@ import '../App.scss'
 import { NavBar2 } from "../components/NavBar/Navbar2";
 import { CarouselSlide } from "../components/Carousel/Carousel"
 import { main } from "../components/Carousel/main.js"
-   
+import { Informacion } from '../components/Servicios/Info-servicios.js';
+ 
 import { Sedes } from '../components/Sedes/Sedes';
 import { Email } from '../components/Contactar/Email.js';
 import { Servicios } from '../components/Servicios/Servicios.js';
@@ -35,7 +36,7 @@ class HomePage extends React.Component {
              <CarouselSlide/>
    
       
-      <Info/>
+      <Informacion/>
        <br/>
          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     

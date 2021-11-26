@@ -2,10 +2,12 @@ import React, {useEffect, useState, } from 'react'
 import '../NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Router, Route, Switch, Redirect, Link } from 'react-router-dom';
+
 
  
 
-export const Info = () => {
+export const Informacion = () => {
 
    
 
@@ -58,11 +60,15 @@ export const Info = () => {
      src="./images/propuesta.png"
             alt="First slide"
         />  <b> DECLARACION/PROPUESTA </b></a> < td />
-           
-            
-           </nav>
-                 
+                          
+                        
+            </nav>  
+ 
         </div>
+        <br/><br/>
+
+        <center> <Link to="/servicios" class="btn btn-secondary bi-align-middle">MAS SERVICIOS ...</Link></center>
+
         </div>
     )
 }

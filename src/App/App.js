@@ -10,6 +10,7 @@ import { adminPage } from '../administrar/Login/adminPage.js';
 import { LoginPage } from '../administrar/Login/LoginPage';
 import { RegisterPage } from '../administrar/RegisterPage';
 import { Sedes } from '../components/Sedes/Sedes';
+import { menu } from '../components/Sedes/menu.js';
 import { Info } from '../components/Sedes/info.js';
 import { Email } from '../components/Contactar/Email.js';
 import { Servicios } from '../components/Servicios/Servicios.js';
@@ -42,6 +43,7 @@ class App extends React.Component {
                                 <Route path="/contacto" component={Email} />
                                 <Route path="/servicios" component={Servicios} />
                                 <Route path="/platos" component={Sedes} />
+                                <Route path="/menu" component={menu} />
                                 <Route path="/info" component={Info} />
                                 <Route path="/" component={HomePage}/>
                                  

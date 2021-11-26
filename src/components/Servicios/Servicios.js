@@ -307,7 +307,7 @@ export const Servicios = () => {
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
 
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/1.jpg" width="350" height="350" class="DiagonalRedonda centrado"/>
                       </div>
                     </div>
                   </div>
@@ -322,8 +322,7 @@ export const Servicios = () => {
                       </div>
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
-
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/2.jpg" width="350" height="350" class="DiagonalRedonda centrado" />
                       </div>
                     </div>
                   </div>
@@ -339,7 +338,7 @@ export const Servicios = () => {
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
 
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/3.jpg" width="350" height="350" class="DiagonalRedonda centrado" />
                       </div>
                     </div>
                   </div>
@@ -356,7 +355,7 @@ export const Servicios = () => {
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
 
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/4.jpg" width="350" height="350" class="DiagonalRedonda centrado" />
                       </div>
                     </div>
                   </div>
@@ -371,7 +370,7 @@ export const Servicios = () => {
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
 
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/5.jpg" width="350" height="350" class="DiagonalRedonda centrado" />
                       </div>
                     </div>
                   </div>
@@ -388,7 +387,7 @@ export const Servicios = () => {
                       <div class="col-lg-4 text-center order-1 order-lg-2">
 
 
-                        <img src="./images/gallery-3.jpg" alt="" class="frame" />
+                      <img src="assets/img/6.jpg" width="350" height="350" class="DiagonalRedonda centrado" />
                       </div>
                     </div>
                   </div>

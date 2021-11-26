@@ -261,18 +261,143 @@ export const Info = () => {
         
         <div>
       <NavBar />
-     
-
- <div class="noticia">
-    <p>  El restaurante la casita, ubicado en bogota, abrió sus puertas en el año de 1984 para acompañar a todas aquellas familias, turistas, empresarios y amigos amantes de la cocina típica y de tradición; del delicioso sabor de un sancocho de gallina hecho en leña, de unos exquisitos fríjoles, de un chorizo hecho en casa, o de una rica arepa de chócolo. Pero sobre todo, el Restaurante abrió sus puertas para todas las personas que aman vivir experiencias únicas, maravillosas y que perduren en el tiempo. <br/>
-
-   <br /> Con el devenir del tiempo la cima se ha convertido en una gran familia, con un talento humano que desempeña su labor con amor, respeto y pasión; transmitiendo experiencias inolvidables a las personas que desde hace 32 años nos visitan, y que regresan para recordar su niñez, pero esta vez en compañía de sus hijos, nietos y gratos amigos.
-  <br /><br />Durante estos años, la cima se ha ido posicionando como uno de los mejores restaurantes gracias a su excelente comida, a su hermoso ambiente y acogedor espacio, y al esmerado servicio y atención al cliente de parte de nuestro talento humano.</p> <div class="reset"></div>
-</div>
-        
-        </div>
       
+
+      <br/>
+      <img class="DiagonalRedonda centrado" src="assets/img/gallery/gallery-6.jpg"  width="400" height="200"/>  <h2><span>Nuestro Restaurante</span></h2>
         
+        <p>El restaurante la casita, ubicado en bogota, abrió sus puertas en el año de 1984 para acompañar a todas aquellas familias, turistas, empresarios y amigos amantes de la cocina típica y de tradición; del delicioso sabor de un sancocho de gallina hecho en leña, de unos exquisitos fríjoles, de un chorizo hecho en casa, o de una rica arepa de chocolo, Pero sobre todo, el Restaurante abrió sus puertas para todas las personas que aman vivir experiencias únicas, maravillosas y que perduren en el tiempo. 
+  <br/><br/>Contamos un talento humano que desempeña su labor con amor, respeto y pasión; transmitiendo experiencias inolvidables a las personas que desde hace 32 años nos visitan, y que regresan para recordar su niñez, pero esta vez en compañía de sus hijos, nietos y gratos amigos.
+ Durante estos años, la cima se ha ido posicionando como uno de los mejores restaurantes gracias a su excelente comida, a su hermoso ambiente y acogedor espacio, y al esmerado servicio y atención al cliente de parte de nuestro talento humano.</p>
+  <br/> <br/>
+  
+<div class="container" data-aos="fade-up"/>
+
+<div class="row"/>
+  <div class="section-header">
+    <h3>Equipo organizacional</h3>
+    <p></p>
+
+
+  </div>
+
+ <div class="container">
+  <div class="row">
+    <div class="col">
+      
+    <div class="col-lg-4 col-md-6">
+      <div class="member" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/testimonials/testimonials-3.jpg" class="DiagonalRedonda" width="200" height="160" alt=""/>
+        <div class="member-info">
+          <div class="member-info-content">
+             
+            <div class="social">
+            <br/>
+               <p><b>DIANIS</b></p>
+              <p> Sub Gerente</p>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="col">
+    <div class="col-lg-4 col-md-6">
+      <div class="member" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/testimonials/testimonials-4.jpg"  class="DiagonalRedonda" width="200" height="160" alt=""/>
+        <div class="member-info">
+          <div class="member-info-content">
+          
+            <div class="social"><br/>
+               <p><b>DANIEL</b></p>
+                <p>Manager Princial</p>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+    <div class="col">
+      
+    <div class="col-lg-4 col-md-6">
+      <div class="member" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/testimonials/testimonials-1.jpg"  class="DiagonalRedonda" width="200" height="160" alt=""/>
+        <div class="member-info">
+          <div class="member-info-content">
+           
+            <div class="social">
+            <br/>
+               <p><b>JORGE</b></p>
+                <p>Coordinador General</p>
+    
+             
+            </div>
+          </div>
+        </div>
+        </div> </div>
+    </div>
+  </div>
+  <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+       <h3>Algunos Comentarios</h3>
+            <div class="container position-relative">
+      
+              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" class="rounded-circle" width="100" height="100" alt=""/>
+                      <h3>Jorge Luis </h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Excelente servicio, buena atencion y todo muy organizado
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div> 
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <img src="assets/img/testimonials/testimonials-3.jpg" class="rounded-circle" width="100" height="100" alt=""/>
+                      <h3>Diani Luz</h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Fue una experiencia maravillosa, 100% recomendado.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                    </div>    </div>    </div>    
+      
+                    
+      
+</div>
+
+   
+  
+
+    
+
+      
+    
+</div>     
+    
+    </div>     
+    
+    
  
               
     )

@@ -1,189 +1,299 @@
  
      <!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>La Casita</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/icon.png" rel="icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-<body>  
- 
+     <html lang="es">
+     
+     <head>
+       <meta charset="utf-8">
+       <meta content="width=device-width, initial-scale=1.0" name="viewport">
+     
+       <title>La Casita</title>
+       <meta content="" name="description">
+       <meta content="" name="keywords">
+     
+       <!-- Favicons -->
+       <link href="assets/img/icon.png" rel="icon">
+     
+       <!-- Google Fonts -->
+       <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+     
+       <!-- Vendor CSS Files -->
+       <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+       <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+       <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+       <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+     
+       <!-- Template Main CSS File -->
+       <link href="assets/css/style.css" rel="stylesheet">
+     
+     </head>
+     <body>  
+      
+             
+           
+         <div class="sticky-container colored-icons">
+           <ul class="sticky">
+           <li>
+           <a href="https://www.facebook.com/" title="Conectar con Facebook" data-tag="Conectar con Facebook" target="_blank">
+             <i class="bi bi-facebook" style="font-size:35px;margin-left:-16px"></i></a>
+           </li>
+           <li>
+           <a href="https://www.youtube.com/" title="Conectar con pinterest" data-tag="Conectar con pinterest" target="_blank">
+             <i class="bi bi-youtube" style="font-size: 35px; margin-left: -16px;"></i></a>
+           </li>
+           <li>
+             <a href="https://www.twitter.com/" title="Conectar con pinterest" data-tag="Conectar con pinterest" target="_blank">
+               <i class="bi bi-twitter" style="font-size: 35px; margin-left: -16px;"></i></a>
+             </li>
+            
+           </ul>
+           </div>
+     
+     
+     
+     <style>
+     
+       .centrado{
+         display:block;
+         margin-left: auto;
+         margin-right: auto;
+       }
+       
         
-<style>
+     
+         img.DiagonalRedonda {
+         border-top-left-radius: 20%;
+             border-bottom-right-radius: 20%;
+             border:1px black solid;
+         background-color:white;
+             padding:10px;   
+         box-shadow: 0px 0px 50px 0px rgba(250, 164, 032, 0.8);
+         }
+       
+       .sticky-container{
+           padding:0px;
+           margin:0px;
+           position:fixed;
+           right:25px;
+           top:100px;
+           width:25px;
+           z-index: 100;
+       }
+       .sticky li{    border-radius: 8px; margin-top: 2px;list-style-type:none;background-color:#fff;color:#efefef;height:38px;padding:0px;margin:0px 0px 2px 0px;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;cursor:pointer;}
+       .sticky li:hover{ margin-left:45px;}
+       .sticky li img{ float:left;}
+       .sticky li p{padding-top:5px;margin:0px;line-height:16px;font-size:small;display: inline-block;}
+       .sticky li p a{text-decoration:none;color:#2C3539;}
+       .sticky li p a:hover{ text-decoration:underline;}
+        
+       .colored-icons .bi-facebook, .bi-facebook:hover{ color:#3b5998; }
+       .colored-icons .bi-twitter, .bi-twitter:hover{ color:#1da1f2; }
+        
+       .colored-icons .bi-youtube, .bi-youtube:hover{ color:#d30606; }
+       div.noticia {
+        width: 100%;
+         
+        background-color: transparent;
+        color:transparent;
+        padding: 5px;
+      }
+      
+      div.noticia img.izquierda {
+        float: left;
+        margin-right: 44px;
+      }
+      
+      div.noticia img.derecha {
+        float: right;
+        margin-left: 51px;
+      }
+      
+      div.reset {
+        clear: both;
+      }
 
-  .centrado{
-		display:block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-	 
-
-    img.DiagonalRedonda {
-		border-top-left-radius: 20%;
-        border-bottom-right-radius: 20%;
-        border:1px black solid;
-		background-color:white;
-        padding:10px;   
-		box-shadow: 0px 0px 50px 0px rgba(250, 164, 032, 0.8);
-    }
-  
-  .sticky-container{
-      padding:0px;
-      margin:0px;
-      position:fixed;
-      right:25px;
-      top:100px;
-      width:25px;
-      z-index: 100;
+.specials {
+  overflow: hidden;
+}
+.specials .nav-tabs {
+  border: 0;
+}
+.specials .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: #433f39;
+  border-radius: 0;
+  border-right: 2px solid #e8e7e4;
+  font-weight: 600;
+  font-size: 15px;
+}
+.specials .nav-link:hover {
+  color: #ffb03b;
+}
+.specials .nav-link.active {
+  color: #ffb03b;
+  border-color: #ffb03b;
+}
+.specials .tab-pane.active {
+  -webkit-animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out;
+}
+.specials .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #433f39;
+}
+.specials .details p {
+  color: #777777;
+}
+.specials .details p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .specials .nav-link {
+    border: 0;
+    padding: 15px;
   }
-  .sticky li{    border-radius: 8px; margin-top: 2px;list-style-type:none;background-color:#fff;color:#efefef;height:38px;padding:0px;margin:0px 0px 2px 0px;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;cursor:pointer;}
-  .sticky li:hover{ margin-left:45px;}
-  .sticky li img{ float:left;}
-  .sticky li p{padding-top:5px;margin:0px;line-height:16px;font-size:small;display: inline-block;}
-  .sticky li p a{text-decoration:none;color:#2C3539;}
-  .sticky li p a:hover{ text-decoration:underline;}
-   
-  .colored-icons .bi-facebook, .bi-facebook:hover{ color:#3b5998; }
-  .colored-icons .bi-twitter, .bi-twitter:hover{ color:#1da1f2; }
-   
-  .colored-icons .bi-youtube, .bi-youtube:hover{ color:#d30606; }
-   
-  </style>
-   
-        <div id="app"></div>
-  <footer id="footer">
-    <div class="container">
-      <h3>La Casita</h3>
-      
-       
-      
-      <div class="social-links">
-      
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        
-      </div>
-       <a href="" class="btn btn-outline-warning btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target="#modalForm1"> <span><i class="bi bi-geo-alt-fill"></i> Maps</span></a>  &nbsp; <a href="portafolio.html" class="btn btn-outline-warning btn-sm btn-rounded"  > <span><i class="bi bi-diagram-3-fill"></i> Directorio </span></a> <br><br>  
-
-        <!-- Modal -->
-        <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                
-         <div class="contenedor-lista">
-                     
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.5164107565!2d-74.2478938043006!3d4.648283717342738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1631858141217!5m2!1ses!2sco" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                     
-    </div>
-    <script src="Mapa/js/jquery.js"></script>
-    <script src="Mapa/js/script.js"></script>
+  .specials .nav-link.active {
+    color: #fff;
+    background: #ffb03b;
+  }
+}
+ .events {
+  
+  background-size: cover;
+  position: relative;
+}
+.events::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.events .section-title h2 {
+  color: #fff;
+}
  
-                    </div>
-                </div>
-            </div>
-        <strong><span>Bogota, Colombia <br> <font color= #ffcc00> <a href="mailto:Restaurante@lacasita.com">Restaurante@lacasita.com</a></font><br>+57 300 123 45 67 <td> <a href="https://api.whatsapp.com/send?phone=+573128420188"> <button type="button" class="btn btn-outline-success"><i class="bi bi-whatsapp"></i></button></a></span></strong>
-      <div class="copyright">
-        &copy; Copyright <BR>Todos los dereschos reservados.
-      </div>
-  
-    </div> 
-  </footer><!-- End Footer -->
-  
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script type="text/javascript">
-  emailjs.init('user_5Zqy2kwNR7Q1ukv7pRVCJ')
-</script>
-
-<script>const btn = document.getElementById('button');
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   btn.value = 'Sending...';
-
-   const serviceID = 'default_service';
-   const templateID = 'template_f5lc8pb';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-  
-    
-			 
-				setTimeout(function() {
-				swal({
-						title: "Perfecto!",
-						text: "Hemos enviado el correo, recibiras una copia como constancia, Revisa en SPAM si no aparece en tu bandeja de recibidos.",
-						type: "success",
-						showConfirmButton: false,
-						timer: 3500
-					}, function() {
-					 		window.location = "index.php";
-				});
-				}, 1000);
-			 
-			 
-    }, (err) => {
-      btn.value = 'Send Email';
+       </style>
        
-       swal({
-						title: "Error!",
-						text: "Ha ocurrido un error",
-						type: "error",
-						showConfirmButton: false,
-						timer: 2000
-					}, function() {
-					 		window.location = "contactenos.php";
-				});
-				}, 1000);
-});
-</script>
-<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
-    </div>
-</body>
-</html>
+        
+             <div id="app"></div>
+       <footer id="footer">
+         <div class="container">
+           <h3>La Casita</h3>
+           
+            
+           
+           <div class="social-links">
+           
+             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+             <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+             
+           </div>
+            <a href="" class="btn btn-outline-warning btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target="#modalForm1"> <span><i class="bi bi-geo-alt-fill"></i> Maps</span></a>  &nbsp; <a href="portafolio.html" class="btn btn-outline-warning btn-sm btn-rounded"  > <span><i class="bi bi-diagram-3-fill"></i> Directorio </span></a> <br><br>  
+     
+             <!-- Modal -->
+             <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                     
+              <div class="contenedor-lista">
+                          
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.5164107565!2d-74.2478938043006!3d4.648283717342738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1631858141217!5m2!1ses!2sco" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          
+         </div>
+         <script src="Mapa/js/jquery.js"></script>
+         <script src="Mapa/js/script.js"></script>
+      
+                         </div>
+                     </div>
+                 </div>
+             <strong><span>Bogota, Colombia <br> <font color= #ffcc00> <a href="mailto:Restaurante@lacasita.com">Restaurante@lacasita.com</a></font><br>+57 300 123 45 67 <td> <a href="https://api.whatsapp.com/send?phone=+573128420188"> <button type="button" class="btn btn-outline-success"><i class="bi bi-whatsapp"></i></button></a></span></strong>
+           <div class="copyright">
+             &copy; Copyright <BR>Todos los dereschos reservados.
+           </div>
+       
+         </div> 
+       </footer><!-- End Footer -->
+       
+     <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+     
+     <script type="text/javascript">
+       emailjs.init('user_5Zqy2kwNR7Q1ukv7pRVCJ')
+     </script>
+     
+     <script>const btn = document.getElementById('button');
+     
+     document.getElementById('form')
+      .addEventListener('submit', function(event) {
+        event.preventDefault();
+     
+        btn.value = 'Sending...';
+     
+        const serviceID = 'default_service';
+        const templateID = 'template_f5lc8pb';
+     
+        emailjs.sendForm(serviceID, templateID, this)
+         .then(() => {
+           btn.value = 'Send Email';
+       
+         
+            
+             setTimeout(function() {
+             swal({
+                 title: "Perfecto!",
+                 text: "Hemos enviado el correo, recibiras una copia como constancia, Revisa en SPAM si no aparece en tu bandeja de recibidos.",
+                 type: "success",
+                 showConfirmButton: false,
+                 timer: 3500
+               }, function() {
+                    window.location = "index.php";
+             });
+             }, 1000);
+            
+            
+         }, (err) => {
+           btn.value = 'Send Email';
+            
+            swal({
+                 title: "Error!",
+                 text: "Ha ocurrido un error",
+                 type: "error",
+                 showConfirmButton: false,
+                 timer: 2000
+               }, function() {
+                    window.location = "contactenos.php";
+             });
+             }, 1000);
+     });
+     </script>
+     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+     
+       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+     
+       <!-- Vendor JS Files -->
+       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+       <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+       <script src="assets/vendor/php-email-form/validate.js"></script>
+       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+     
+       <!-- Template Main JS File -->
+       <script src="assets/js/main.js"></script>
+     
+     </body>
+     
+     </html>
+         </div>
+     </body>
+     </html>
