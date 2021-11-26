@@ -50,6 +50,50 @@ class HomePage extends React.Component {
       <br/>
       <hr/>
 
+  <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+       <h3>Algunos Comentarios</h3>
+            <div class="container position-relative">
+      
+              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <img src="assets/img/testimonials/testimonials-1.jpg" class="rounded-circle" width="100" height="100" alt=""/>
+                      <h3>Jorge Luis </h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Excelente servicio, buena atencion y todo muy organizado
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div> 
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <img src="assets/img/testimonials/testimonials-3.jpg" class="rounded-circle" width="100" height="100" alt=""/>
+                      <h3>Diani Luz</h3>
+                      <h4>Cliente</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Fue una experiencia maravillosa, 100% recomendado.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                    </div>    </div>    </div>    
+      
+                    
+      
+</div>
+
+
        
             </div>   </div>
         );
