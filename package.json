@@ -31,7 +31,6 @@
     "typekit": "^0.1.1",
     "web-vitals": "^1.1.2"
   },
-  
   "homepage": "https://geolocalizador-flask-pyhton3.000webhostapp.com/",
   "scripts": {
     "start": "react-scripts start",

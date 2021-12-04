@@ -312,71 +312,15 @@ function mostrarModal(numeroMenu) {
                         </ul>
  </nav>
 
-
- <main>
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
-            <h1 class="display-4 mt-4">Lista de Productos</h1>
-          
-        </div>
-   <div class="descargar-menu">
-                <p>
-                  <center> <a href="pdf/Menu.pdf" class="btn-outline-danger" download="Menu.pdf"><i class="bi bi-download"></i>DESCARGAR MENÚ</a>
-                    <br/><br/></center>
-                </p>
-             </div>
-        <div class="container" id="lista-productos">
-            
-            <div class="card-deck mb-3 text-center">
-                
-                <div class="card mb-2 shadow-sm">
-            
-                     
-           <div class="fila">
-            <div class="row">
-
-               <div class="col col-lg-4 col-md-4 col-sm-4 col-xs-8" id="lista-productos">
-                    <div class="card text-center">
-                     <img src="assets/img/platillos/menu1@2x.png" alt="Imagen Menu Plato 1" class="DiagonalRedonda" id="imgCuadro"/>
-                       
-                    </div>
-                    <div class="card-body">
-                      <h4 class="my-0 font-weight-bold">Costillares silvestres con calabacin asado </h4>
-                        <h3 class="card-title pricing-card-title precio">$ <span class="">12000.00</span></h3>
-
-                        <div class="list-unstyled mt-3 mb-4">
-                              <button type="button" class="btn btn-outline-secundary mx-auto d-block mt-5 btn-lg" onclick="mostrarModal(1)"><i class="bi bi-plus-circle-fill"></i></button>
-                              
-         <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <p>   <img src="assets/img/platillos/menu1@2x.png" alt="Imagen Menu Plato 1" class="DiagonalRedonda1"    id="imgCuadro"/>   Disfruta de nuestra especilidad <br/> costillares ahumados acompañado con calabacin silvestre. Ademas, como acompañamiento guisantes variados con salsa agridulce.</p>  
-                    </div>
-                </div>
-                
-                    
-            </div>
- <script>
-   
-   </script>
-                    <input type="number" class="input" min="1" value="1" placeholder="Cantidad" required/> <br/>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
-                    </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-              </main>
+ 
 
         <div class="container-fluid">
 
       <div class="section-title">
-        <h2>Algunas fotos de <span>Nuestro Restaurante</span></h2>
-        <p>Disponemos de multiples sedes a nivel nacional, estamos mas cerca de ti. </p>
+        <h2>Algunas fotos de <span>nuestros platos</span></h2>
+         
       </div>
-
+      
     <div class="row no-gutters">
  
        
@@ -385,7 +329,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> sdfsdfsdfsdf</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -393,7 +337,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> sdsddfsdffdsdfAB</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -401,14 +345,14 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> dsfdfsdffdssdf23 AB</p></center>
           </div>
         </div>  <div class="col-lg-3 col-md-4">
           <div class="gallery-item">
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> Bcvdsf AB</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -416,7 +360,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> dffffffgb  AB</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -424,7 +368,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> gffgfgfg AB</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -432,7 +376,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> gfgfgffgfg</p></center>
           </div>
         </div>
           <div class="col-lg-3 col-md-4">
@@ -440,7 +384,7 @@ function mostrarModal(numeroMenu) {
             <a href="./images/gallery-3.jpg" class="gallery-lightbox">
               <img src="./images/gallery-3.jpg" alt="" class="frame" />
             </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> BOGOTA, CLL 44 AV 23 AB</p></center>
+                 <center> <p><i class="bi bi-geo-alt-fill"></i> fggfhgf AB</p></center>
           </div>
         </div>
         </div>
