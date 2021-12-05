@@ -1,31 +1,20 @@
-import React,{useState,useEffect} from 'react';
  
-import axios from 'axios';
+import React,{useState} from 'react';
  
-
-export const LoginPage = () => {
+const UpdateUser = () => {
+   
     const [user,updateUser] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
-    const ConsultarApi = async()=>{
-        const url =`http://localhost:5000/Api/Empleados`;
-        const Listuser = await axios.get(url);
+    const ConsultarApi = async(e)=>{
+        const url =`http://localhost:5000/Api/Empleado/${2}`;
+        const Listuser = await axios.put(url);
         updateUser(Listuser.data);
         console.log(Listuser.data);
-      } 
-      useEffect(()=>{
-        ConsultarApi();
-      },estadoeffect);
       
-    const eliminarEmpleado = async (e)=>{
-      axios.delete(`http://localhost:5000/Api/Empleados/${e.id}`).then(res => {
-        updatestado(true);
-        console.log(res.data)
-      })
-      .catch(error => {
-        console.log(error.message)
-      })
-      updatestado(false);
-    }
+      } 
+     
+        ConsultarApi();
+    
     return ( 
         
         <div className="container  mb-5">
@@ -42,7 +31,7 @@ export const LoginPage = () => {
                          <tr>
                          <th >
                          <p >
-                           {" "}
+                         
                            {e.id} 
                          </p>
                        </th>
@@ -72,9 +61,9 @@ export const LoginPage = () => {
                                 ></img>{" "}
                               </th>
                        <th >
-                       <Button  onClick={() => eliminarEmpleado(e)}>
-                                  X
-                                </Button>
+                       <a  onClick={() => eliminarEmpleado(e)}>
+                                  Eliminar
+                                </a>
                        </th>
                      </tr>
                      </thead>
@@ -86,6 +75,10 @@ export const LoginPage = () => {
         </div>
       </div>
         );
+ 
+ 
+ 
+
 }
  
- 
+export default UpdateUser;

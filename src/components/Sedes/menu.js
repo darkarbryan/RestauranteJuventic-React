@@ -277,123 +277,22 @@ function mostrarModal(numeroMenu) {
     })
 
 }
-    return (
-    
-        
-        <div>
-      <NavBar />
-    
+  const ConsultarApi = async()=>{
+
+    const url =`http://localhost:5000/Api/plato`;
+    const platos = await axios.get(url);
+    updateMenu(platos.data);
+  }
+  useEffect(()=>{
+    ConsultarApi();
+  },[]);
+
+  return ( 
+
+
+    <>
+    <NavBar/>
+    ddddddddddddd
+    </>
+  )}
       
- <nav>
-  <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <img src="assets/img/carrito.png" align="left" class="derecha" height="50px"
-                                    width="50px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"></img>
-                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                    <table id="lista-carrito" class="table"  height="110px"
-                                    width="190px">
-                                        <thead>
-                                           <a href="#" id="vaciar-carrito" class="btn btn-secondary  "> <b>Vaciar Carrito</b> </a>
-                                    <a href="#" id="procesar-pedido" class="btn btn-success  "><b> Facturar pedido </b></a>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-
-                                 
-                                </div>
-                            </li>
-                        </ul>
- </nav>
-
- 
-
-        <div class="container-fluid">
-
-      <div class="section-title">
-        <h2>Algunas fotos de <span>nuestros platos</span></h2>
-         
-      </div>
-      
-    <div class="row no-gutters">
- 
-       
-        <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> sdfsdfsdfsdf</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> sdsddfsdffdsdfAB</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> dsfdfsdffdssdf23 AB</p></center>
-          </div>
-        </div>  <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> Bcvdsf AB</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> dffffffgb  AB</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> gffgfgfg AB</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> gfgfgffgfg</p></center>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-          <div class="gallery-item">
-            <a href="./images/gallery-3.jpg" class="gallery-lightbox">
-              <img src="./images/gallery-3.jpg" alt="" class="frame" />
-            </a>
-                 <center> <p><i class="bi bi-geo-alt-fill"></i> fggfhgf AB</p></center>
-          </div>
-        </div>
-        </div>
-        </div>
-        
-        </div>
-      
-        
- 
-              
-    )
-}

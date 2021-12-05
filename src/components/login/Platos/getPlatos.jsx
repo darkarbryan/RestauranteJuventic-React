@@ -1,23 +1,24 @@
 import React,{useState,useEffect} from 'react';
- 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import axios from 'axios';
  
 
-export const LoginPage = () => {
+const Getplatos = () => {
     const [user,updateUser] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
-    const ConsultarApi = async()=>{
-        const url =`http://localhost:5000/Api/Empleados`;
+    const ConsultarApi = async(e)=>{
+        const url =`http://localhost:5000/Api/Plato`;
         const Listuser = await axios.get(url);
         updateUser(Listuser.data);
         console.log(Listuser.data);
-      } 
-      useEffect(()=>{
-        ConsultarApi();
-      },estadoeffect);
       
+      } 
+     
+        ConsultarApi();
+   
     const eliminarEmpleado = async (e)=>{
-      axios.delete(`http://localhost:5000/Api/Empleados/${e.id}`).then(res => {
+      axios.delete(`http://localhost:5000/Api/Plato/${e.id}`).then(res => {
         updatestado(true);
         console.log(res.data)
       })
@@ -32,17 +33,23 @@ export const LoginPage = () => {
         <div className="row">
               
               {user.length === 0 ? (
-                    <p className="text-center blockquote">No hay elementos</p>
+                    <p className="text-center blockquote">No hay platos</p>
                   ) :(
+                      
                     user.map((e)=>(
+                        
                 <div key={e.id}>
+                    
                    <table className="table">
+                       
                    <thead>  
-                   
+                    
                          <tr>
+                              
                          <th >
+                          
                          <p >
-                           {" "}
+                         
                            {e.id} 
                          </p>
                        </th>
@@ -68,13 +75,13 @@ export const LoginPage = () => {
                                   src={e.imagen}
                                   height="70px"
                                   width="70px"
-                                  className="mr"
+                                  className="redonda"
                                 ></img>{" "}
                               </th>
                        <th >
-                       <Button  onClick={() => eliminarEmpleado(e)}>
-                                  X
-                                </Button>
+                       <a  onClick={() => eliminarEmpleado(e)}>
+                                  Eliminar
+                                </a>
                        </th>
                      </tr>
                      </thead>
@@ -88,4 +95,4 @@ export const LoginPage = () => {
         );
 }
  
- 
+export default Getplatos;

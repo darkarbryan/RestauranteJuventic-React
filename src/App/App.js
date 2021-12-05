@@ -13,6 +13,9 @@ import { Sedes } from '../components/Sedes/Sedes';
 import { menu } from '../components/Sedes/menu.js';
 import { Info } from '../components/Sedes/info.js';
 import { Login } from '../components/login/login.jsx';
+import { Admin } from '../components/login/Administrador.jsx';
+import { ConsultarUser } from '../components/login/Empleado/getEmpleado.jsx';
+import { Register } from '../components/login/registrar.jsx';
 import { Email } from '../components/Contactar/Email.js';
 import { Servicios } from '../components/Servicios/Servicios.js';
  import { Panel } from '../administrar/Login/panel.js';
@@ -39,14 +42,15 @@ class App extends React.Component {
                             <Switch>
                                 <PrivateRoute exact path="/admin" component={adminPage} />
                                 <Route path="/login" component={Login} />
-                                <Route path="/register" component={RegisterPage} />
-                               
+                                <Route path="/register" component={Register} />
+                                <Route path="/administrador" component={Admin} /> 
                                 <Route path="/contacto" component={Email} />
                                 <Route path="/servicios" component={Servicios} />
                                 <Route path="/platos" component={Sedes} />
                                 <Route path="/menu" component={menu} />
                                 <Route path="/info" component={Info} />
-                                <Route path="/" component={HomePage}/>
+                                <Route path="/" component={HomePage}/> 
+                                 
                                  
                                 <Redirect from="*" to="/" />
                             </Switch>
