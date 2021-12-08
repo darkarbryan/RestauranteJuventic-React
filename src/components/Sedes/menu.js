@@ -15,6 +15,7 @@ export const menu = () => {
     
      
     const [platillos,updateUser] = useState([]);
+    const [carro,updateCarro] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
     const ConsultarApi = async(e)=>{
         const url =`http://lacasita.somee.com/Api/Plato`;
@@ -24,21 +25,12 @@ export const menu = () => {
       
       } 
     
-    const datos = (c) =>{
-
-      
-      updateCarro(c);
-      console.log("carro");
+    const datos = (e) =>{
+      updateCarro(e);
+     
     }
     
-
-    
-
-
-    
- 
-
- useEffect(() => {
+   useEffect(() => {
         ConsultarApi();
     }, []);
 
@@ -386,24 +378,43 @@ function cargarEventos(){
 
                         <div class="list-unstyled mt-3 mb-4">
                               <button type="button" class="btn btn-outline-secundary mx-auto d-block mt-5 btn-lg" onclick="mostrarModal(1)"/>
-                              
         
-        <div class="modal fade" id="modalForm1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                 <img src={e.Imagen} alt="Imagen Menu Plato 1" class="DiagonalRedonda1"    id="imgCuadro"/>   
-                   <p>{e.descripcion}</p>
-                    </div>
-                </div>
-                
-                    
-            </div>
+                                <div class="modal fade" id="modalForm1"   aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <img src={e.Imagen} alt="Imagen Menu Plato 1" class="DiagonalRedonda1"    id="imgCuadro"/>   
+                                          <p>{e.descripcion}</p>
+                                            </div>
+                                        </div>
+                                    </div>
  
                     <input type="number" class="input" min="1" value="1" placeholder="Cantidad" required/> <br/>
-                        <button  class="btn btn-block btn-primary agregar-carrito" onclick="datos({e})" >Comprar</button>
+                        <button  class="btn btn-block btn-primary agregar-carrito" data-toggle="modal" data-target="#exampleModal">Comprar</button>
                     </div>
-                </div>
-                </div>
+                </div><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Carrito de comprs</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <div className="row">
+                  <div className="col-6"><img src={e.imagen}  alt="Imagen Menu Plato 1" class="DiagonalRedonda" id="imgCuadro" src={e.imagen} /></div>
+                  <div className="col-3"><p>{e.nombre}</p></div>
+               </div>
+               
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
                    
               )) )}
          </div>
