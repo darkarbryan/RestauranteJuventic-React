@@ -4,9 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
  
 import { NavBar } from "../NavBar/Navbar.js";
+import axios from 'axios';
  
 
 export const menu = () => {
+
+  const remove = async()=>{
+    localStorage.removeItem("usu");
+    }
+  
 /**
 * Template Name: Delicious - v4.4.0
 * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -285,6 +291,7 @@ function mostrarModal(numeroMenu) {
   }
   useEffect(()=>{
     ConsultarApi();
+    remove();
   },[]);
 
   return ( 
@@ -292,7 +299,7 @@ function mostrarModal(numeroMenu) {
 
     <>
     <NavBar/>
-    ddddddddddddd
+   
     </>
   )}
       
