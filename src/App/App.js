@@ -11,6 +11,7 @@ import { LoginPage } from '../administrar/Login/LoginPage';
 import { RegisterPage } from '../administrar/RegisterPage';
 import { Sedes } from '../components/Sedes/Sedes';
 import { menu } from '../components/Sedes/menu.js';
+import { Carrito } from '../components/Sedes/Carrito.js';
 import { Info } from '../components/Sedes/info.js';
 import { Login } from '../components/login/login.jsx';
 import { Admin } from '../components/login/Administrador.jsx';
