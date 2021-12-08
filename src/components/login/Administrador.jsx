@@ -6,6 +6,7 @@ import { NavBar } from "../NavBar/Navbar.js";
 import Registerplatos from './Platos/insertarPlatos.jsx'; 
 import GetPlatos from './Platos/getPlatos'; 
 import GetServicio from './Servicios/getServicios.jsx'; 
+import Reservaadmin from './Reserva/Reservaadmin.jsx'; 
 import InsertarServicios from './Servicios/insertarServicios.jsx'; 
 import { Link } from 'react-router-dom';
 import axios from "axios";
@@ -261,7 +262,10 @@ export const Admin = () => {
       });
     
     })()
-       
+       const cerrar = () =>{
+
+
+       }
             
             return (
             
@@ -321,26 +325,22 @@ export const Admin = () => {
             <div class="col-lg-3">
               <ul class="nav nav-tabs flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-1"><i class="bi bi-file-pdf"></i>Agregar empleados</a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-1"><i class="bi bi-person-plus-fill"></i>Agregar empleados</a>
                 </li>
               <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><i class="bi bi-person-plus"></i> Agregar platos</a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2"><i class="bi bi-receipt-cutoff"></i> Agregar platos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-3"> <i class="bi bi-images"></i> Agregar servicios </a>
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-3"> <i class="bi bi-ui-checks-grid"></i> Agregar servicios </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4"> <i class="bi bi-person-bounding-box"></i> Administrar reservas </a>
-                </li>
+    
                  <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"> <i class="bi bi-calendar2-event"></i> Administrar pedidos</a>
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5"> <i class="bi bi-calendar2-event"></i> Administrar reservas</a>
                 </li>
                   <li class="nav-item">
                   <a class="nav-link" data-bs-toggle="tab" href="#tab-6"><i class="bi bi-info-circle"></i> Administrar comentarios</a>
                 </li>
-                 <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#tab-7"><i class="bi bi-lock"></i> Cambio de contraseña</a>
-                </li>
+                  
                 <li class="nav-item">
                  <Link to="/login">  <i class="bi bi-arrow-left-square"></i> Cerrar Sesion</Link>
                 </li>
@@ -352,91 +352,61 @@ export const Admin = () => {
               <div class="tab-content">
                 <div class="tab-pane active show" id="tab-1">
                   <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
+                    <div class=" ">
                       <h3>panel servicios</h3>
                         
                  <InsertEmpleado/> 
                  
 
                    <br /> <div>
-                      <a href="contactenos.html" class="btn-menu animate__animated animate__fadeInUp scrollto"><i class="bi bi-calendar2-check"></i> <td />Reservate Aqui</a>
-                    </div>
+                     </div>
                     </div>
                     
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-2">
                   <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
+                    <div class=" ">
                       <h3>panel platos</h3>
                                      <br /><Registerplatos/> <br />    <br /> <br /> <div>
-                      <a href="contactenos.html" class="btn-menu animate__animated animate__fadeInUp scrollto"><i class="bi bi-calendar2-check"></i> <td />Reservate Aqui</a>
-                    </div>
+                     </div>
                     </div>
                     
                   </div>
                 </div>
                 <div class="tab-pane" id="tab-3">
                   <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
+                    <div class=" ">
                       <h3>panel servicios</h3>
                                     
                       <InsertarServicios/>  <br /> <br /> <div>
-                      <a href="contactenos.html" class="btn-menu animate__animated animate__fadeInUp scrollto"><i class="bi bi-calendar2-check"></i> <td />Reservate Aqui</a>
-                    </div>
+                     </div>
                     </div>
                     
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-4">
-                  <div class="row">
-                    <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Declaracion y/o propuesta</h3>
-                    Sabemos lo lindo que es tener una relacion mas alla de lo personal <br /> <br /> En la conquista no se trata solamente del fisico sino también de los detalles, el trato, la atencion y la fidelidad.
-                     <br />
-                    te ayudamos hacer tu declaracion mas emotiva.   <br /> <br /> <div>
-                      <a href="contactenos.html" class="btn-menu animate__animated animate__fadeInUp scrollto"><i class="bi bi-calendar2-check"></i> <td />Reservate Aqui</a>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                     
-         
-                  <img src="./images/gallery-3.jpg" alt="" class="frame" />
-                    </div>
-                  </div>
-                </div>
+                 
                 <div class="tab-pane" id="tab-5">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                      <h3>Despedidas</h3>  <br />
-                  El mejor recuerdo de una despedida es la ultima experiencia en la que demuestras lo gran e importante que es esa persona, y mejor aún en nuestro restaurante   <br /> <br /> <div>
-                      <a href="contactenos.html" class="btn-menu animate__animated animate__fadeInUp scrollto"><i class="bi bi-calendar2-check"></i> <td />Reservate Aqui</a>
+                      <h3> Solicitud de reservas</h3>  <br />
+
+                      <Reservaadmin/>
+                   
                     </div>
-                    </div>
-                    <div class="col-lg-4 text-center order-1 order-lg-2">
                     
-         
-                  <img src="./images/gallery-3.jpg" alt="" class="frame" />
-                    </div>
                   </div>
                 </div>
                       <div class="tab-pane" id="tab-6">
                   <div class="row">
                     <div class="col-lg-8 details order-2 order-lg-1">
-                    <label className= "mt-5 blockquote">Empleados</label>
-                <div className="form-group ">
-                        <button className="btn btn-outline-secondary ml" onClick={()=>updateEstado("Insertar")}>Insertar</button>
-                        <button className="btn btn-outline-success ml" onClick={()=>updateEstado("Actualizar")}>Actualizar</button>
-                        <button className="btn btn-outline-primary ml" onClick={()=>updateEstado("Consultar")}>Consultar</button>
-                </div>
-               <InsertEmpleado/>
-                 <GetEmpleado/>
-                    </div>
+                    <label className= "mt-5 blockquote">Administrar comentarios</label>
+                 
+                                   </div>
                     <div class="col-lg-4 text-center order-1 order-lg-2">
                      
          
-                  <img src="./images/gallery-3.jpg" alt="" class="frame" />
-                    </div>
+                     </div>
                   </div>
                 </div>
               </div>
