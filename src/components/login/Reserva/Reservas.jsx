@@ -1,5 +1,5 @@
   import React, {useEffect, useState,useRef } from 'react'
-import '../../components/NavBar/NavBar.scss'
+import '../../../components/NavBar/NavBar.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import emailjs from 'emailjs-com';
@@ -7,9 +7,9 @@ import { Router, Route, Switch, Redirect, Link } from 'react-router-dom';
 import axios from 'axios';
 
   
-import { NavBar } from "../NavBar/Navbar.js";
+import { NavBar } from "../../NavBar/Navbar.js";
 
-export const Email = () => {
+export const Reservar = () => {
    const [servicios,updateUser] = useState([]);
 
        const [Error, UpdateError] = useState(false);
@@ -19,13 +19,13 @@ export const Email = () => {
         Telefono: "",
         Email: "",
         Servicio: "",
-        NumPer: "",
+        Numper: "",
         Fecha:"",
         Hora:"",
         Indicaciones:"",
       });
      
-      const {Nombre,Telefono,Email,Servicio,NumPer,Fecha,Hora,Indicaciones} = Reserva;
+      const {Nombre,Telefono,Email,Servicio,Numper,Fecha,Hora,Indicaciones} = Reserva;
       const form = useRef();
       const handleChangeReserva = (e) =>{
           UpdateReserva({
@@ -45,16 +45,21 @@ export const Email = () => {
   
 
           if(Nombre.trim()==='' || Telefono.trim()==='' || Email.trim()==='' || Servicio.trim()==='' || 
-          NumPer.trim()==='' || Fecha.trim()==='' || Hora.trim()==='' || Indicaciones.trim()===''){
+          Numper.trim()==='' || Fecha.trim()==='' || Hora.trim()==='' || Indicaciones.trim()===''){
+
+            alert("Campos vacios, por favor completarlos",  "/login");
             UpdateError(true);
             return;
 
-            alert("Campos vacios, por favor completarlos",  "/login");
         }
 
 
              UpdateError(false);
-             insertarreserva();
+             insertarreserva(); 
+              
+      
+
+
              emailjs.sendForm('default_service', 'template_ieclegs', form.current, 'user_mI3KQGEeqhQex6wF9em3e')
              .then((result) => {
                  success();
@@ -217,10 +222,10 @@ const alert = async (x,v)=>{
                                    <input 
                                    type="number"
                                    className="form-control"
-                                   name="NumPer"
+                                   name="Numper"
                                    placeholder="Cantidad"
                                    onChange={handleChangeReserva}
-                                   value={NumPer}
+                                   value={Numper}
                                    />
                                </div>
                            </div>

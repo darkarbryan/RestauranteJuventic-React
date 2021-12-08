@@ -8,7 +8,7 @@ const Getplatos = () => {
     const [user,updateUser] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
     const ConsultarApi = async(e)=>{
-        const url =`http://localhost:5000/Api/Plato`;
+        const url =`http://lacasita.somee.com/Api/Plato`;
         const Listuser = await axios.get(url);
         updateUser(Listuser.data);
         console.log(Listuser.data);
@@ -18,7 +18,7 @@ const Getplatos = () => {
         ConsultarApi();
    
     const eliminarEmpleado = async (e)=>{
-      axios.delete(`http://localhost:5000/Api/Plato/${e.id}`).then(res => {
+      axios.delete(`http://lacasita.somee.com/Api/Plato/${e.id}`).then(res => {
         updatestado(true);
         console.log(res.data)
       })

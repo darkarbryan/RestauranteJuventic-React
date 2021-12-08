@@ -8,7 +8,7 @@ const ConsultarUser = () => {
     const [user,updateUser] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
     const ConsultarApi = async(e)=>{
-        const url =`http://localhost:5000/Api/Empleado`;
+        const url =`http://lacasita.somee.com/Api/Empleado`;
         const Listuser = await axios.get(url);
         updateUser(Listuser.data);
         console.log(Listuser.data);
@@ -18,7 +18,7 @@ const ConsultarUser = () => {
         ConsultarApi();
    
     const eliminarEmpleado = async (e)=>{
-      axios.delete(`http://localhost:5000/Api/Empleado/${e.id}`).then(res => {
+      axios.delete(`http://lacasita.somee.com/Api/Empleado/${e.id}`).then(res => {
         updatestado(true);
         console.log(res.data)
       })
@@ -33,7 +33,7 @@ const ConsultarUser = () => {
         <div className="row">
               
               {user.length === 0 ? (
-                    <p className="text-center blockquote">No hay elementos</p>
+                    <p className="text-center blockquote">No hay empleados</p>
                   ) :(
                     user.map((e)=>(
                 <div key={e.id}>

@@ -253,6 +253,7 @@ export const Info = () => {
       clickable: true
     }
   });
+  console.log(localStorage.getItem("usu"));
 
 })()
    

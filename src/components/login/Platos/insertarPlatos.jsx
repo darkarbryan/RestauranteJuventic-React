@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
       });
     };
   const insertarEmpleado = async ()=>{
-      axios.post("http://localhost:5000/Api/Plato",empleado).then(res => {
+      axios.post("http://lacasita.somee.com/Api/Plato",empleado).then(res => {
         console.log(res.data)
       })
       .catch(error => {
@@ -75,7 +75,7 @@ import { Link } from "react-router-dom";
       <div className="container getuser mb-5">
         <div className="row">
           <form
-            className="col card text-dark bg-transparent mb-5 pt-5 pb-2"
+            className=" "
             onSubmit={SubmitForm}
           >
             <fieldset>

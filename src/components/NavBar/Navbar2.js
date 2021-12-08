@@ -7,7 +7,7 @@ import { Router, Route, Switch, Redirect, Link } from 'react-router-dom';
 import './NavBar.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { RegisterPage } from '../../administrar/RegisterPage';
+
 
 
 

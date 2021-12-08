@@ -31,7 +31,7 @@ const [error, UpdateError] = useState(false);
 
   const registrarCliente = async ()=>{
 
-    const url = `http://localhost:5000/Api/Cliente`;
+    const url = `http://lacasita.somee.com/Api/Cliente`;
     axios.post(url,cliente).then(res => {
       console.log(res.data)
     })

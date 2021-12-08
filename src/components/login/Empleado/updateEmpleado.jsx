@@ -6,7 +6,7 @@ const UpdateUser = () => {
     const [user,updateUser] = useState([]);
     const [estadoeffect, updatestado] = useState(false);
     const ConsultarApi = async(e)=>{
-        const url =`http://localhost:5000/Api/Empleado/${2}`;
+        const url =`http://lacasita.somee.com/Api/Empleado/${2}`;
         const Listuser = await axios.put(url);
         updateUser(Listuser.data);
         console.log(Listuser.data);
@@ -21,7 +21,7 @@ const UpdateUser = () => {
         <div className="row">
               
               {user.length === 0 ? (
-                    <p className="text-center blockquote">No hay elementos</p>
+                    <p className="text-center blockquote"> </p>
                   ) :(
                     user.map((e)=>(
                 <div key={e.id}>

@@ -1,12 +1,36 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { NavBar } from "../NavBar/Navbar.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import axios from "axios";
  
 
 export const Login = () => {
- 
+    
+  var miStorage = window.localStorage;
+
+    
+  const [response,updateresponse]=useState([]);
+  const comprobarusu = async()=>{
+    if (miStorage.length > 0 ){
+      location.replace("/menu");
+    }
+  }
+  const ConsultarApi = async()=>{
+    const url =`http://lacasita.somee.com/Api/Cliente`;
+    const Listuser = await axios.get(url);
+    updateresponse(Listuser.data);
+    response.map(e=>(console.log(e.usuario + ' ' + e.pass )));
+     
+  
+  } 
+  useEffect(() => {
+    comprobarusu();
+    ConsultarApi();
+}, []);
+     
+
     const [error, UpdateError] = useState(false);
     const [Sesion, UpdateSesion] = useState({
       Usuario: "",
@@ -23,14 +47,38 @@ export const Login = () => {
     };
     const handleSubmit = (e) => {
       e.preventDefault();
+     
   
       // Validar que no haya campos vacios
       if (Usuario.trim() === "" || Password.trim() === "") {
         UpdateError(true);
         return;
+      }else{
+               response.map(e=>{ if (e.usuario==Usuario && e.pass==Password){
+               
+              localStorage.setItem("usu", e.usuario);
+              localStorage.setItem("id", e.id);
+              location.replace("/inicio");
+               }}
+               );
+      }
+      console.log(localStorage.getItem("usu"));
+      console.log(localStorage.getItem("id"));
+      
+      
+      if (Usuario.trim() === "admin" || Password.trim() === "admin") {
+         
+         location.replace("/administrador");
       }
       UpdateError(false);
     };
+ 
+  
+
+
+      
+
+    
   
     return (
 

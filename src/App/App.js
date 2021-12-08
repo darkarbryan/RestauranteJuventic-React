@@ -14,6 +14,7 @@ import { menu } from '../components/Sedes/menu.js';
 import { Info } from '../components/Sedes/info.js';
 import { Login } from '../components/login/login.jsx';
 import { Admin } from '../components/login/Administrador.jsx';
+import { Reservar } from '../components/login/Reserva/Reservas.jsx';
 import { ConsultarUser } from '../components/login/Empleado/getEmpleado.jsx';
 import { Register } from '../components/login/registrar.jsx';
 import { Email } from '../components/Contactar/Email.js';
@@ -49,6 +50,8 @@ class App extends React.Component {
                                 <Route path="/platos" component={Sedes} />
                                 <Route path="/menu" component={menu} />
                                 <Route path="/info" component={Info} />
+                                <Route path="/re" component={Reservar} />
+                                 
                                 <Route path="/" component={HomePage}/> 
                                  
                                  
