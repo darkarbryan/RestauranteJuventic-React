@@ -12,24 +12,8 @@ export const Login = () => {
 
   
     
-  const [response,updateresponse]=useState([]);
-  const comprobarusu = async()=>{
-    if (miStorage.length > 0 ){
+  const [response,updateresponse]=useState([]); 
 
-      localStorage.removeItem("usu");
-    localStorage.removeItem("id");
-     
-    swal({
-        title: "Perfecto!",
-        text: "Cerro sesion",
-        type: "success",
-        showConfirmButton: false,
-        timer: 3500
-    }, function() {
-              
-});
-     }
-  }
   const ConsultarApi = async()=>{
     const url =`http://lacasita.somee.com/Api/Cliente`;
     const Listuser = await axios.get(url);
@@ -39,8 +23,7 @@ export const Login = () => {
   
   } 
   useEffect(() => {
-    comprobarusu();
-    ConsultarApi();
+     ConsultarApi();
 }, []);
      
 

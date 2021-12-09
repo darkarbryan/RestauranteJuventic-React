@@ -16,6 +16,8 @@ import { Info } from '../components/Sedes/info.js';
 import { Login } from '../components/login/login.jsx';
 import { Admin } from '../components/login/Administrador.jsx';
 import { Usuario } from '../components/login/usuario.js';
+import { Logout } from '../components/login/logout.jsx';
+
 
   
 import { ConsultarUser } from '../components/login/Empleado/getEmpleado.jsx';
@@ -53,7 +55,9 @@ class App extends React.Component {
                                 <Route path="/platos" component={Sedes} />
                                 <Route path="/menu" component={menu} />
                                 <Route path="/info" component={Info} />
-                                 <Route path="/usuario" component={Usuario} />
+                                <Route path="/usuario" component={Usuario} />
+                                <Route path="/logout" component={Logout} />
+
  
                                  
                                 <Route path="/" component={HomePage}/> 

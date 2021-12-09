@@ -62,7 +62,7 @@ export const Usuario = () => {
                   
                   
                 <li class="nav-item">
-                 <Link to="/login">  <i class="bi bi-arrow-left-square"></i> Cerrar Sesion</Link>
+                 <Link to="/logout">  <i class="bi bi-arrow-left-square"></i> Cerrar Sesion</Link>
                 </li>
                  
               </ul>

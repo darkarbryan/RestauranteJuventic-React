@@ -80,9 +80,9 @@ function Reservaadmin() {
                        <th></th>
                          <th></th>  <th></th>
                        <th >
-                       <a  onClick={() => eliminarEmpleado(e)}>
+                           <button className="btn btn-outline-danger" onClick={() => eliminarEmpleado(e)}>
                                   Eliminar
-                                </a>
+                                </button>
                        </th>
                      </tr>
                      </thead>

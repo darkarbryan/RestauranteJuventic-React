@@ -14,7 +14,21 @@ export const Admin = () => {
   
     const [estado,updateEstado] = useState("admin");
     console.log(estado);
+    var a= "admin";
  
+  var miStorage = window.localStorage;
+  if ( localStorage.getItem("admin") != a ) {
+      swal({
+        title: "eror!",
+        text: "no inicio sesion",
+        type: "error",
+        showConfirmButton: false,
+        timer: 3500
+    }).then(function() {
+      location.replace("/inicio");  
+});
+  
+  }      
       window.onload = function(){ 
  // Tome la imagen cargada, convierta el resultado del código y muestre el dom de la imagen
  var img_upload=document.getElementById("img_upload");
@@ -119,7 +133,7 @@ base64_code.innerHTML = this.result;
                 </li>
                   
                 <li class="nav-item">
-                 <Link to="/login">  <i class="bi bi-arrow-left-square"></i> Cerrar Sesion</Link>
+                 <Link to="/logout">  <i class="bi bi-arrow-left-square"></i> Cerrar Sesion</Link>
                 </li>
                  
               </ul>

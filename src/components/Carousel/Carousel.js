@@ -63,7 +63,7 @@ VALIDO SOLO HASTA EL 4 DE OCTUBRE, PILAS ! </p>
 CONOCELOS Y HAZ TU PEDIDO</p>
            
             <div>
-            <Link to="/platos" class="btn btn-outline-warning bi bi-card-list" > Mira nuestros platos</Link>
+            <Link to="/menu" class="btn btn-outline-warning bi bi-card-list" > Mira nuestros platos</Link>
                 </div>
                 </div>     </div></div></div>
         
