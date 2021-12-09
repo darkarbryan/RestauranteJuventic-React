@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
         descripcion: "",
         restaurante_id: 1,
         imagen: "",
+
   });
+ 
   const [error, UpdateError] = useState(false);
     const {
      
@@ -61,11 +63,15 @@ import { Link } from "react-router-dom";
     }, function() {
              window.location = "/";
 });
-    };
-   
+    }; 
+  
+ 
   return ( 
       <div>
+
         
+   
+  
        {error ? (
       <p className="alert alert-danger text-center">
         Todos lo campos son obligatorios
@@ -73,9 +79,11 @@ import { Link } from "react-router-dom";
     ) : null}
    
       <div className="container getuser mb-5">
+
         <div className="row">
+ 
           <form
-            className=" "
+            className=" " enctype="multipart/form-data"
             onSubmit={SubmitForm}
           >
             <fieldset>
@@ -97,11 +105,12 @@ import { Link } from "react-router-dom";
                 <div className="col-md-4">
                   <div className="form-group">
                     <label className="m-4">Imagen</label>
-                    <input
-                      type="text"
+
+                     <input
+                      type="text" id="img_upload"
                       className="form-control"
                       name="imagen"
-                      placeholder="URL"
+                      placeholder="Codigo de imagen"
                       onChange={handleChangeUser}
                       value={imagen}
                     />

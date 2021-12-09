@@ -27,12 +27,17 @@ const Getplatos = () => {
       })
       updatestado(false);
     }
-    return ( 
+  
+ 
+     return ( 
         
         <div className="container  mb-5">
-        <div className="row">
+
               
+        <div className="row">
+             
               {user.length === 0 ? (
+
                     <p className="text-center blockquote">No hay platos</p>
                   ) :(
                       
@@ -57,7 +62,9 @@ const Getplatos = () => {
                          <p
                     
                          >
-                           {" "}
+
+ 
+                            {" "}
                            {e.nombre}
                            <br /> 
                          </p>
@@ -66,22 +73,22 @@ const Getplatos = () => {
                          <p
                          >
                            {" "}
-                           {e.descripcion}
-                           <br /> 
+                           {e.descripcion} 
+                            <br /> 
                          </p>
                        </th>
                        <th >
-                                <img
+                        <img
                                   src={e.imagen}
                                   height="70px"
                                   width="70px"
                                   className="redonda"
                                 ></img>{" "}
-                              </th>
+                               </th>
                        <th >
-                       <a  onClick={() => eliminarEmpleado(e)}>
+                      <button className="btn btn-outline-danger" onClick={() => eliminarEmpleado(e)}>
                                   Eliminar
-                                </a>
+                                </button>
                        </th>
                      </tr>
                      </thead>

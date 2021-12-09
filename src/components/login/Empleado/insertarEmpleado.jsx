@@ -63,18 +63,22 @@ const Insertar = () => {
                window.location = "/";
   });
       };
-     
+      
     return ( 
         <div>
-          
-         {error ? (
-        <p className="alert alert-danger text-center">
-          Todos lo campos son obligatorios
-        </p>
-      ) : null}
-     
-        <div className="container getuser mb-5">
-          <div className="row">
+       
+   
+  
+       {error ? (
+      <p className="alert alert-danger text-center">
+        Todos lo campos son obligatorios
+      </p>
+    ) : null}
+   
+      <div className="container getuser mb-5">
+
+        <div className="row">
+ 
             <form
               className=" "
               onSubmit={SubmitForm}
@@ -102,7 +106,7 @@ const Insertar = () => {
                         type="text"
                         className="form-control"
                         name="imagen"
-                        placeholder="URL"
+                        placeholder="Codigo de imagen"
                         onChange={handleChangeUser}
                         value={imagen}
                       />

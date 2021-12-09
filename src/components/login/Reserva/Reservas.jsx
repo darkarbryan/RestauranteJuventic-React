@@ -9,7 +9,7 @@ import axios from 'axios';
   
 import { NavBar } from "../../NavBar/Navbar.js";
 
-export const Reservar = () => {
+  const Reservar = () => {
    const [servicios,updateUser] = useState([]);
 
        const [Error, UpdateError] = useState(false);
@@ -124,26 +124,18 @@ const alert = async (x,v)=>{
      
     
        <>
-          <NavBar />
-      <section id="specials" class="specials">
-        <div class=" ">
+         
+         <div class=" ">
 
           <div class="section-title">
-         <h3>Contactenos</h3>
+          
                   
                            
-                   <p>  Cuentanos tus dudas, preguntas, solicitudes o peticiones<br /> <b> te responderemos en el mejor tiempo posible</b><br /><br />
-       <i class="bi bi-heart-fill"></i></p>  <br /> <br />
+                    
+        
 
             <div class="row">
-              <div class="col-lg-3">
-                <ul class="nav nav-tabs flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1"><img src="assets/img/logo_correo.png" width="70" height="40" /> EMAIL</a>
-                  </li>
-                 
-                </ul>
-              </div>
+               
 
               <div class="col-lg-9 mt-4 mt-lg-0">
                 <div class="tab-content">
@@ -299,8 +291,7 @@ const alert = async (x,v)=>{
           </div>
 
         </div>        </div>
-      </section>
-      </>
+       </>
       
       
     
@@ -308,3 +299,4 @@ const alert = async (x,v)=>{
     );  
          
 }
+export default Reservar

@@ -10,12 +10,25 @@ export const Login = () => {
     
   var miStorage = window.localStorage;
 
+  
     
   const [response,updateresponse]=useState([]);
   const comprobarusu = async()=>{
     if (miStorage.length > 0 ){
-      location.replace("/menu");
-    }
+
+      localStorage.removeItem("usu");
+    localStorage.removeItem("id");
+     
+    swal({
+        title: "Perfecto!",
+        text: "Cerro sesion",
+        type: "success",
+        showConfirmButton: false,
+        timer: 3500
+    }, function() {
+              
+});
+     }
   }
   const ConsultarApi = async()=>{
     const url =`http://lacasita.somee.com/Api/Cliente`;
@@ -58,7 +71,7 @@ export const Login = () => {
                
               localStorage.setItem("usu", e.usuario);
               localStorage.setItem("id", e.id);
-              location.replace("/inicio");
+              location.replace("/usuario");
                }}
                );
       }
@@ -67,7 +80,8 @@ export const Login = () => {
       
       
       if (Usuario.trim() === "admin" || Password.trim() === "admin") {
-         
+        var admin="admin";
+         localStorage.setItem("admin", admin);
          location.replace("/administrador");
       }
       UpdateError(false);

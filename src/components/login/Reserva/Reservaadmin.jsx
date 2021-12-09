@@ -59,7 +59,7 @@ function Reservaadmin() {
                     
                          >
                            {" "}
-                           {e.cliente}
+                           {e.nombre}
                            <br /> 
                          </p>
                        </th>
@@ -73,7 +73,7 @@ function Reservaadmin() {
                          >
                            {" "}
                            
-                           {e.servicio}
+                           {e.nombre1}
                            <br /> 
                          </p>
                        </th>

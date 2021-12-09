@@ -264,20 +264,22 @@ export const Info = () => {
       <NavBar />
       
 
-      <br/>
-      <img class="DiagonalRedonda centrado" src="assets/img/gallery/gallery-6.jpg"  width="400" height="200"/>  <h2><span>Nuestro Restaurante</span></h2>
-        
-        <p>El restaurante la casita, ubicado en bogota, abrió sus puertas en el año de 1984 para acompañar a todas aquellas familias, turistas, empresarios y amigos amantes de la cocina típica y de tradición; del delicioso sabor de un sancocho de gallina hecho en leña, de unos exquisitos fríjoles, de un chorizo hecho en casa, o de una rica arepa de chocolo, Pero sobre todo, el Restaurante abrió sus puertas para todas las personas que aman vivir experiencias únicas, maravillosas y que perduren en el tiempo. 
-  <br/><br/>Contamos un talento humano que desempeña su labor con amor, respeto y pasión; transmitiendo experiencias inolvidables a las personas que desde hace 32 años nos visitan, y que regresan para recordar su niñez, pero esta vez en compañía de sus hijos, nietos y gratos amigos.
- Durante estos años, la cima se ha ido posicionando como uno de los mejores restaurantes gracias a su excelente comida, a su hermoso ambiente y acogedor espacio, y al esmerado servicio y atención al cliente de parte de nuestro talento humano.</p>
-  <br/> <br/>
-  
+      <br/> <div class="noticia">
+  <img class="izquierda" src="assets/img/gallery/gallery-6.jpg"  width="300" height="400"/>
+  <p style={{ color: 'black' }}> <br/><h3  style={{ color: 'black' }}>¿Quienes somos?</h3><br/> <br/>El restaurante la casita, ubicado en bogota, abrió sus puertas en el año de 1984 para acompañar a todas aquellas familias, turistas, empresarios y amigos amantes de la cocina típica y de tradición; del delicioso sabor de un sancocho de gallina hecho en leña, de unos exquisitos fríjoles, de un chorizo hecho en casa, o de una rica arepa de chócolo. Pero sobre todo, el Restaurante abrió sus puertas para todas las personas que aman vivir experiencias únicas, maravillosas y que perduren en el tiempo. <br/>
+
+   <br/> Con el devenir del tiempo la cima se ha convertido en una gran familia, con un talento humano que desempeña su labor con amor, respeto y pasión; transmitiendo experiencias inolvidables a las personas que desde hace 32 años nos visitan, y que regresan para recordar su niñez, pero esta vez en compañía de sus hijos, nietos y gratos amigos.
+  <br/><br/>Durante estos años, la cima se ha ido posicionando como uno de los mejores restaurantes gracias a su excelente comida, a su hermoso ambiente y acogedor espacio, y al esmerado servicio y atención al cliente de parte de nuestro talento humano.</p> <div class="reset"></div>
+</div>
+
+<br/><br/><br/>
 <div class="container" data-aos="fade-up"/>
 
 <div class="row"/>
   <div class="section-header">
     <h3>Equipo organizacional</h3>
     <p></p>
+    <br/>
 
 
   </div>
@@ -344,7 +346,7 @@ export const Info = () => {
         </div> </div>
     </div>
   </div>
-  <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
+  <br/><br/> <br/><br/> <br/><br/>  
        <h3>Algunos Comentarios</h3>
             <div class="container position-relative">
       
